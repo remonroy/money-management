@@ -34,7 +34,7 @@ app.get('/',(req,res)=>{
 const PORT =process.env.PORT || 4000
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
-    mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.dk8do.mongodb.net/${process.env.DB_PASS}?retryWrites=true&w=majority`,
+    mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.dk8do.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`,
     {useNewUrlParser: true, useUnifiedTopology: true,},
     ()=>{
         console.log('Database connected successfully...!');
