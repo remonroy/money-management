@@ -15,7 +15,7 @@ const Home = (props) => {
         />
       </div>
       <div style={{ transform: "translateY(25%)" }} className="col-md-6">
-        <a href="/dashboard" className="btn btn-primary mt-5">
+        <a href="/register" className="btn btn-primary mt-5">
           Dashboard
         </a>
       </div>
